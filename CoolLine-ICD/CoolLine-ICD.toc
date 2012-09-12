@@ -1,0 +1,14 @@
+## Interface: 50001
+## Title: CoolLine-ICD
+## Notes: Add ICD functionality to CoolLine
+## Author: SinaC
+## Version: 0.0.1
+
+## RequiredDeps: CoolLine
+## OptionalDeps: LibInternalCooldowns-1.0
+
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
+embeds.xml
+core.lua
