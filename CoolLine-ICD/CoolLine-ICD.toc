@@ -2,8 +2,8 @@
 ## Title: CoolLine-ICD
 ## Notes: Add ICD functionality to CoolLine
 ## Author: SinaC
-## Credits: totalpackage, Antiarc
-## Version: 0.0.1
+## Credits: TotalPackage, Antiarc
+## Version: 0.0.2
 
 ## RequiredDeps: CoolLine
 ## OptionalDeps: LibInternalCooldowns-1.0
