@@ -3,7 +3,7 @@
 ## Notes: Add ICD functionality to CoolLine
 ## Author: SinaC
 ## Credits: TotalPackage, Antiarc
-## Version: 0.0.2
+## Version: 1.0
 
 ## RequiredDeps: CoolLine
 ## OptionalDeps: LibInternalCooldowns-1.0
@@ -11,5 +11,8 @@
 ## LoadManagers: AddonLoader
 ## X-LoadOn-Always: delayed
 
+#@no-lib-strip@
 embeds.xml
+#@end-no-lib-strip@
+
 core.lua
