@@ -2,6 +2,38 @@ local lib, oldminor = LibStub:GetLibrary("LibInternalCooldowns-1.0")
 
 -- Format is spellID = itemID | {itemID, itemID, ... itemID}
 local spellToItem = {
+	-- Mists of Pandaria T14 Raids 
+	[126533] = {86790, 86131, 87063},	-- Vial of Dragon's Blood
+	[126577] = {86792, 86133, 87065},	-- Light of the Cosmos	
+	[126588] = {86805, 86147, 87075},	-- Qin-Xi's Polarizing Seal
+	[126554] = {86791, 86132, 87057},	-- Bottle of Infinite Stars
+	[126582] = {86802, 86144, 87072},	-- Lei Shin's Final Orders
+	[126640] = {86885, 86327, 87163},	-- Spirits of the Sun
+	[126646] = {86881, 86323, 87160},	-- Stuff of Nightmares
+	[126649] = {86890, 86332, 87167},	-- Terror in the Mists
+	[126657] = {86894, 86336, 87172},	-- Darkmist Vortex
+	[126659] = {86907, 86388, 87175},	-- Essence of Terror
+
+	-- Mists of Pandaria Darkmoon Cards
+	[128984] = 79328,			-- Relic of Xuen (agi)
+	[128985] = 79331,			-- Relic of Yu'lon
+	[128986] = 79327,			-- Relic of Xuen (str)
+	[128987] = 79330, 			-- Relic of Chi Ji
+
+	-- Mists of Pandaria Brewfest
+	[127923] = 87572, 			-- Mithril Wristwatch
+	[127914] = 87573,			-- Thousand-Year Pickled Egg
+	[127926] = 87574,			-- Coren's Cold Chromium Coaster
+
+	-- Mists of Pandaria 450+ Blue Trinkets
+	[126236] = {81243, 85181},		-- Iron Protector Talisman
+	[126476] = 81192,			-- Vision of the Predator
+	[126483] = 81125,			-- Windswept Pages
+	[126489] = {81267, 88355},		-- Searing Words
+	[126513] = 81138,			-- Carbonic Carbuncle
+	[126266] = 81133,			-- Empty Fruit Barrel
+	[127572] = 87498,			-- Core of Decency
+
 	-- Darkmoon Cards
 	[89091] = 62047,			-- Darkmoon Card: Volcano
 
@@ -254,6 +286,15 @@ local spellToItem = {
 
 -- spell ID = {enchant ID, slot1[, slot2]}
 local enchants = {
+	-- MoP 			-- DISABLED as of 5.1 due to RPPM conversions
+--	[104993] = {4442, 16},			-- Jade Spirit
+--	[118334] = {4444, 16, 17},		-- Dancing Steel - Agility
+--	[118335] = {4444, 16, 17},		-- Dancing Steel - Strength
+--	[120032] = {4444, 16, 17},		-- Dancing Steel combo spell?	
+--	[116660] = {4446, 16},			-- River's Song
+--	[116631] = {4445, 16},			-- Colossus
+
+
 	-- Cataclysm
 	[74245] = {4099, 16, 17},		-- Landslide
 	[74241] = {4097, 16},			-- Power Torrent
@@ -288,6 +329,25 @@ local metas = {
 -- Spell ID => cooldown, in seconds
 -- If an item isn't in here, 45 sec is assumed.
 local cooldowns = {
+	-- Mists of Pandaria T14 Raids
+	[126657] = 105,			-- Darkmist Vortex
+	[126659] = 105,			-- Essence of Terror
+	[126649] = 105,			-- Terror in the Mists
+
+	-- Mists of Pandara Darkmoon Cards
+	[128984] = 55, 			-- Relic of Xuen (agi)
+	[128985] = 50,			-- Relic of Yu'lon
+	[128987] = 50,			-- Relic of Chi Ji
+
+	-- Mists of Pandaria 450+ Blue Trinkets
+	[126368] = 30,			-- Empty Fruit Barrel
+	[126516] = 105,			-- Carbonic Carbuncle
+	[126473] = 105,			-- Vision of the Predator
+	[126237] = 60,			-- Iron Protector Talisman
+	[126482] = 65,			-- Windswept Pages
+	[126490] = 85,			-- Searing Words
+	[127572] = 105,			-- Core of Decency
+	
 	-- Tol Barad factions
 	[91192] = 50,			-- Mandala of Stirring Patterns, confirm!
 	[91047] = 75,			-- Stump of Time
@@ -400,6 +460,14 @@ local cooldowns = {
 	[92218] = 50,			-- Bloodthirsty Gladiator's Insignia of Dominance
 	[92216] = 50,			-- Bloodthirsty Gladiator's Insignia of Victory
 	[92220] = 50,			-- Bloodthirsty Gladiator's Insignia of Conquest
+
+	-- MoP enchants
+	[104993] = 50,			-- Jade Spirit
+	[118334] = 60,			-- Dancing Steel - Agility
+	[118335] = 60,			-- Dancing Steel - Strength
+	[120032] = 60,			-- Dancing Steel combo spell?	
+	[116660] = 30, 			-- River's Song
+	[116631] = 20,			-- Colossus
 
 	-- Cataclysm enchants
 	[74224] = 20,			-- Heartsong

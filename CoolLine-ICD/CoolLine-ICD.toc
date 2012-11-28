@@ -1,9 +1,9 @@
-## Interface: 50001
+## Interface: 50100
 ## Title: CoolLine-ICD
 ## Notes: Add ICD functionality to CoolLine
 ## Author: SinaC
 ## Credits: TotalPackage, Antiarc
-## Version: 1.0
+## Version: 1.2
 
 ## RequiredDeps: CoolLine
 ## OptionalDeps: LibInternalCooldowns-1.0

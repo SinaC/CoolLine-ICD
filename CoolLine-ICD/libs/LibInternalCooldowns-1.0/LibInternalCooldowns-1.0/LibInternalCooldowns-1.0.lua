@@ -1,5 +1,5 @@
 local MAJOR = "LibInternalCooldowns-1.0"
-local MINOR = tonumber(("$Revision: 33 $"):match("%d+"))
+local MINOR = tonumber(("$Revision: 34 $"):match("%d+"))
 
 local lib, oldminor = LibStub:NewLibrary(MAJOR, MINOR)
 if not lib then return end -- No Upgrade needed.
@@ -36,12 +36,12 @@ lib.eventFrame.lib = lib
 
 local INVALID_EVENTS = {
 	SPELL_DISPEL 			= true,
-	SPELL_DISPEL_FAILED 	= true,
+	SPELL_DISPEL_FAILED 		= true,
 	SPELL_STOLEN 			= true,
 	SPELL_AURA_REMOVED 		= true,
-	SPELL_AURA_REMOVED_DOSE = true,
+	SPELL_AURA_REMOVED_DOSE		= true,
 	SPELL_AURA_BROKEN 		= true,
-	SPELL_AURA_BROKEN_SPELL = true,
+	SPELL_AURA_BROKEN_SPELL		= true,
 	SPELL_CAST_FAILED 		= true
 }
 
@@ -66,7 +66,6 @@ local slots = {
 	INVTYPE_HOLDABLE = 17,
 	INVTYPE_SHIELD = 17,
 	INVTYPE_WEAPONOFFHAND = 17,
-	INVTYPE_RANGED = 18
 }
 
 function lib:PLAYER_ENTERING_WORLD()
